@@ -22,7 +22,7 @@ function Sidebar() {
           src="https://loremflickr.com/420/420"
           alt="background"
         />
-        <Avatar src={user.photoUrl ? user.photoUrl : } className="sidebar_avatar" />
+        <Avatar src={user.photoUrl} className="sidebar_avatar" />
         <div class="sidebar_top_info">
           <h4>{user.displayName}</h4>
           <p>{user.email}</p>
