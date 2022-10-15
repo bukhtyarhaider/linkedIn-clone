@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f2ef;
+  align-items: center;
+  width: "100%";
+  height: "100%";
+}
+
+.app_body {
+  max-width: 1200px;
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #f3f2ef;
+  display: flex;
+  flex-direction: row;
+}

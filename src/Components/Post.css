@@ -1,0 +1,43 @@
+.post {
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.post_header {
+  display: flex;
+  margin-bottom: 10px;
+}
+.post_info {
+  margin-left: 10px;
+}
+
+.post_info > p {
+  font-size: 12px;
+  color: gray;
+}
+.post_info > h2 {
+  font-size: 15px;
+}
+
+.post_body {
+  overflow-wrap: anywhere;
+}
+
+.post_button {
+  color: gray;
+  display: flex;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+.post_earth_icon {
+  color: gray;
+  font-weight: 800;
+  font-size: 15px !important;
+}
+.post_time {
+  color: gray;
+  font-size: 5px;
+}

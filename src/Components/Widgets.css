@@ -1,0 +1,36 @@
+.widgets {
+  flex: 0.2;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  min-width: 300px;
+  height: fit-content;
+}
+.widgets_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.widgets_footer {
+  padding: 2px;
+  font-size: 15px;
+  display: flex;
+  width: fit-content;
+}
+
+.widgets_footer > h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: gray;
+}
+
+.arrowIcon {
+  color: gray;
+  height: 20px !important;
+}
+
+.widgets_footer:hover {
+  background-color: lightgrey;
+}
