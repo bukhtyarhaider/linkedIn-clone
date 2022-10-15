@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { login, logout, selectUser } from "./Store/features/counter/userSlice";
 import { getAuth } from "firebase/auth";
@@ -8,8 +8,10 @@ import Feed from "./Components/Feed";
 import Login from "./Components/Login";
 import Widgets from "./Components/Widgets";
 import "./App.css";
+import Loading from "./Components/Loading/Loading";
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const user = useSelector(selectUser);
   const auth = getAuth();
   const dispatch = useDispatch();
@@ -25,29 +27,37 @@ function App() {
             photoUrl: userAuth.photoURL,
           })
         );
+        setLoading(false);
       } else {
         dispatch(logout());
+        setLoading(false);
       }
     });
   }, [auth, dispatch]);
 
   return (
-    <div>
-      {!user ? (
-        <Login />
+    <>
+      {loading ? (
+        <Loading />
       ) : (
         <div>
-          <Header />
-          <div className="App">
-            <div className="app_body ">
-              <Sidebar />
-              <Feed />
-              <Widgets />
+          {!user ? (
+            <Login />
+          ) : (
+            <div>
+              <Header />
+              <div className="App">
+                <div className="app_body ">
+                  <Sidebar />
+                  <Feed />
+                  <Widgets />
+                </div>
+              </div>
             </div>
-          </div>
+          )}
         </div>
       )}
-    </div>
+    </>
   );
 }
 
