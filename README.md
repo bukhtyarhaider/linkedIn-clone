@@ -1,6 +1,9 @@
-# LinkedIn Clone
+# LinkedIn Clone [![React App](https://img.shields.io/badge/demo-00C853?logo=react&logoColor=ffffff)](https://linkedin-clone-705b2.web.app)
 
 ![Linkedin](https://i.stack.imgur.com/gVE0j.png) **LinkedIn**
+
+
+
 
 its a one day challenge to create a linkedIn clone with basic features - **Built using React JS, Redux & Firebase ** .
 
