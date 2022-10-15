@@ -19,10 +19,10 @@ function Sidebar() {
       <div className="sidebar_top">
         <img
           className="background_img"
-          src="https://media-exp1.licdn.com/dms/image/C4E16AQHFrScB4rPdKw/profile-displaybackgroundimage-shrink_200_800/0/1629858202417?e=1639612800&v=beta&t=09TrJhaQRGbRaWd89KTjh0ueygoSJAD4cQrvyQy2qls"
+          src="https://loremflickr.com/420/420"
           alt="background"
         />
-        <Avatar src={user.photoUrl} className="sidebar_avatar" />
+        <Avatar src={user.photoUrl ? user.photoUrl : } className="sidebar_avatar" />
         <div class="sidebar_top_info">
           <h4>{user.displayName}</h4>
           <p>{user.email}</p>
