@@ -1,6 +1,6 @@
 import React from "react";
 import "./Loading.css";
-function Loading() {
+function Loading({ underDevelopment = false }) {
   return (
     <div className="loading_container">
       <div>
@@ -21,6 +21,11 @@ function Loading() {
         </svg>
         <h5>CLONE</h5>
         <h6>By Bukhtyar</h6>
+        {underDevelopment && (
+          <div className="waring_container">
+            <p>This set is not designed for mobile view</p>
+          </div>
+        )}
       </div>
     </div>
   );
